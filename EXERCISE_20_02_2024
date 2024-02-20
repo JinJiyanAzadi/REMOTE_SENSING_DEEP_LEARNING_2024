@@ -17,6 +17,7 @@ os.chdir("C:/Users/Norma/Desktop/REMOTE_SENSING_DEEP_LEARNING_2024")
 
 #https://github.com/mwaskom/seaborn-data/blob/master/penguins.csv --> this is where I got the dataset from
 penguins = pd.read_csv('penguins.csv')
+penguins
 
 #create a dataframe from the .csv file
 df_penguins = pd.DataFrame(penguins)
@@ -29,3 +30,6 @@ df_penguins.info()
 
 #descriptive statistics of the dataset
 df_penguins.describe()
+
+#to see how many missing values
+df_penguins.isnull().sum()
