@@ -8,6 +8,24 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
+#get the current directory
 current_dir = os.getcwd()
 print("Current working directory:", current_dir)
+
+#set my specific directory
 os.chdir("C:/Users/Norma/Desktop/REMOTE_SENSING_DEEP_LEARNING_2024")
+
+#https://github.com/mwaskom/seaborn-data/blob/master/penguins.csv --> this is where I got the dataset from
+penguins = pd.read_csv('penguins.csv')
+
+#create a dataframe from the .csv file
+df_penguins = pd.DataFrame(penguins)
+print(penguins_df)
+
+#used to have a quick overview of the head of the dataframe
+df_penguins.head()
+
+df_penguins.info()
+
+#descriptive statistics of the dataset
+df_penguins.describe()
