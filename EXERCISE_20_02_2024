@@ -1,0 +1,13 @@
+#EXERCISE 20/02/2024: download the penguins dataset from seaborn and execute an EDA
+#Save the information derived from EDA in a printable and informative variable. 
+#Example is a dictionary of list of strings in which a list contains the information 
+#and the key identifies the plot from which information is derived.
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+
+current_dir = os.getcwd()
+print("Current working directory:", current_dir)
+os.chdir("C:/Users/Norma/Desktop/REMOTE_SENSING_DEEP_LEARNING_2024")
